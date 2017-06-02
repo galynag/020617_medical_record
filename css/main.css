@@ -22,3 +22,10 @@ select, input {
     clear: both;
     display: block;
 }
+.checked {
+    background: grey;
+}
+.busy {
+    background: lightgrey;
+    opacity: 0.3;
+}

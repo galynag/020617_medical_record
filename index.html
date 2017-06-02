@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="conteiner"></div>
 <label>Images in select</label>
 </div>
 <div class="input-field col s12 m6">
@@ -25,57 +26,17 @@
     <option value="Боль3 И. П.">Боль3 И. П.</option>
     <option value="Боль4 И. П.">Боль4 И. П.</option>
 </select>
-<select id="date" class="browser-default" >
-    <option value=""  selected>Выбрать дату</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-</select>
-<input id="birthdate" type="text" class="datepicker picker__input" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="birthdate_root">
-    <!--<select id="start-hour" class="browser-default" disabled>-->
-        <!--<option value="" disabled selected>Время начала приема</option>-->
-        <!--<option value="7">7</option>-->
-        <!--<option value="8">8</option>-->
-        <!--<option value="9">9</option>-->
-        <!--<option value="10">10</option>-->
-    <!--</select>-->
-<select id="start-hour" class="browser-default" >
-    <option value=""  selected>Время начала приема</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-</select>
-<select id="finish-hour" class="browser-default" >
-    <option value=""  selected>Время окончания приема</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-</select>
 
-<!--<form action="#">-->
-    <!--<p>-->
-        <!--<input type="checkbox" class="filled-in" id="filled-in-box7" checked="checked" value="7">-->
-        <!--<label for="filled-in-box7">7-00</label>-->
-    <!--</p>-->
-    <!--<p>-->
-        <!--<input type="checkbox" class="filled-in" id="filled-in-box8"  value="8">-->
-        <!--<label for="filled-in-box8">8-00</label>-->
-    <!--</p>-->
-    <!--<p>-->
-        <!--<input type="checkbox" id="test8" disabled="disabled" value="9">-->
-        <!--<label for="test8">9-00</label>-->
-    <!--</p>-->
-<!--</form>-->
+<input id="birthdate" type="text" class="datepicker picker__input" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="birthdate_root">
+
 <div id="time-dashboard"></div>
 
-<div id="range-input" class="noUi-target noUi-ltr noUi-horizontal"></div>
 <div id=""></div>
 
 
-<button id="record">Record</button>
+<a id="record" class="waves-effect waves-light btn">Record</a>
+<a id="cancel-record" class="waves-effect waves-light btn">Cancel</a>
+</div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="js/nouislider.min.js"></script>
