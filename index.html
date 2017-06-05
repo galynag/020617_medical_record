@@ -3,42 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="conteiner"></div>
-<label>Images in select</label>
+<div class="container">
+    <!--<div class="input-field col s12 m6">-->
+        <!--<label>Images in select</label>-->
+        <!--<select class="icons">-->
+            <!--<option value="" disabled selected>Choose your option</option>-->
+            <!--<option value="" data-icon="img/doctor2.png" class="left circle">example 1</option>-->
+            <!--<option value="" data-icon="img/female_doctor.png" class="left circle">example 2</option>-->
+            <!--<option value="" data-icon="img/male_doctor1.png" class="left circle">example 3</option>-->
+            <!--<option value="" data-icon="img/pharmacist_female.png" class="left circle">example 3</option>-->
+        <!--</select>-->
+
+    <!--</div>-->
+    <div class="row">
+    <div class="input-field col s12 m6">
+
+
+            <!--<span class="caret">▼</span>-->
+            <!--<input type="text" class="select-dropdown" readonly="true" data-activates="select-options-992d4a34-0ae3-1418-1c46-1583a9850eb3" value="Choose your option">-->
+            <!--<ul id="select-options-992d4a34-0ae3-1418-1c46-1583a9850eb3" class="dropdown-content select-dropdown" style="width: 302px; position: absolute; top: 0px; left: 0px; opacity: 1; display: none;">-->
+                <!--<li class="disabled">-->
+                    <!--<span>Choose your option</span>-->
+                <!--</li>-->
+                <!--<li class=""><img alt="" src="images/sample-1.jpg" class="left circle">-->
+                    <!--<span>example 1</span>-->
+                <!--</li>-->
+                <!--<li class=""><img alt="" src="images/office.jpg" class="left circle">-->
+                    <!--<span>example 2</span>-->
+                <!--</li>-->
+                <!--<li class=""><img alt="" src="images/yuna.jpg" class="left circle">-->
+                    <!--<span>example 3</span>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <select class="icons initialized elect-wrapper icons" data-activates="select-options-992d4a34-0ae3-1418-1c46-1583a9850eb3">
+            <option value="" selected>Choose your option</option>
+            <option value="" data-icon="img/doctor2.png" class="left circle">example 1</option>
+            <option value="" data-icon="img/female_doctor.png" class="left circle">example 2</option>
+            <option value="" data-icon="img/male_doctor1.png" class="left circle">example 3</option>
+        </select>
+
+        <label>Images in select</label>
+    </div>
 </div>
-<div class="input-field col s12 m6">
-    <select class="icons">
-        <option value="" disabled selected>Choose your option</option>
-        <option value="" data-icon="" class="left circle">example 1</option>
-        <option value="" data-icon="" class="left circle">example 2</option>
-        <option value="" data-icon="" class="left circle">example 3</option>
+
+    <select id="doctors" class="browser-default" >
+        <option value="none"  selected>Выбрать врача</option>
+        <option value="Боль1 И. П.">Боль1 И. П.</option>
+        <option value="Боль2 И. П.">Боль2 И. П.</option>
+        <option value="Боль3 И. П.">Боль3 И. П.</option>
+        <option value="Боль4 И. П.">Боль4 И. П.</option>
     </select>
+    <input id="birthdate" type="text" class="datepicker picker__input" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="birthdate_root">
+    <div id="time-dashboard"></div>
+    <div id=""></div>
+    <a id="record" class="waves-effect waves-light btn">Record</a>
+    <a id="cancel-record" class="waves-effect waves-light btn">Cancel</a>
 </div>
-<select id="doctors" class="browser-default" >
-    <option value=""  selected>Выбрать врача</option>
-    <option value="Боль1 И. П.">Боль1 И. П.</option>
-    <option value="Боль2 И. П.">Боль2 И. П.</option>
-    <option value="Боль3 И. П.">Боль3 И. П.</option>
-    <option value="Боль4 И. П.">Боль4 И. П.</option>
-</select>
 
-<input id="birthdate" type="text" class="datepicker picker__input" readonly="" tabindex="-1" aria-haspopup="true" aria-expanded="false" aria-readonly="false" aria-owns="birthdate_root">
-
-<div id="time-dashboard"></div>
-
-<div id=""></div>
-
-
-<a id="record" class="waves-effect waves-light btn">Record</a>
-<a id="cancel-record" class="waves-effect waves-light btn">Cancel</a>
-</div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 <script src="js/nouislider.min.js"></script>
 <script src="js.js"></script>
 </body>
